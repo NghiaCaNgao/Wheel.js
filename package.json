@@ -1,12 +1,29 @@
 {
   "name": "wheel.js",
-  "version": "0.0.1",
+  "homepage": "https://github.com/NghiaCaNgao/Wheel.js",
   "description": "Simple lucky wheel using the canvas element.",
+  "version": "0.0.1",
   "license": "MIT",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "author": "NCN",
+  "main": "dist/wheel.js",
+  "keywords": [
+    "canvas",
+    "wheel",
+    "html5",
+    "lucky",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NghiaCaNgao/Wheel.js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NghiaCaNgao/Wheel.js/issues"
+  },
+  "scripts": {
+    "autobuild": "rollup -c -w",
+    "build": "rollup -c"
+  },
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",

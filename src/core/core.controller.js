@@ -22,7 +22,6 @@ function getCanvas(item) {
 }
 
 class Chart {
-    // eslint-disable-next-line max-statements
     constructor(itemID, userConfig) {
         const config = this.config = new Config(userConfig);
         const initialCanvas = getCanvas(itemID);

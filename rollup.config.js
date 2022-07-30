@@ -7,8 +7,8 @@ const pkg = require('./package.json');
 
 const input = 'src/index.js';
 const inputESM = {
-    'dist/Wheel.esm': 'src/index.esm.js',
-    'dist/helpers.esm': 'src/helpers/index.js'
+    'dist/wheel.esm': 'src/index.esm.js',
+    // 'dist/helpers.esm': 'src/helpers/index.js'
 };
 
 const banner = `/*!
@@ -34,7 +34,7 @@ module.exports = [
         ],
         output: {
             name: 'Wheel',
-            file: 'dist/Wheel.js',
+            file: 'dist/wheel.js',
             banner,
             format: 'umd',
             indent: false,
@@ -53,7 +53,7 @@ module.exports = [
         ],
         output: {
             name: 'Wheel',
-            file: 'dist/Wheel.min.js',
+            file: 'dist/wheel.min.js',
             format: 'umd',
             indent: false,
         },
