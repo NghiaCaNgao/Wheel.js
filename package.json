@@ -2,10 +2,12 @@
   "name": "@nghiavuive/wheel.js",
   "homepage": "https://github.com/NghiaCaNgao/Wheel.js",
   "description": "Simple lucky wheel using the canvas element.",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "license": "MIT",
   "author": "NCN",
   "main": "dist/wheel.js",
+  "module": "dist/wheel.esm.js",
+  "types": "types/index.esm.d.ts",
   "keywords": [
     "canvas",
     "wheel",
@@ -24,6 +26,18 @@
     "autobuild": "rollup -c -w",
     "build": "rollup -c"
   },
+  "files": [
+    "auto/package.json",
+    "auto/**/*.js",
+    "auto/**/*.d.ts",
+    "dist/*.js",
+    "dist/chunks/*.js",
+    "types/*.d.ts",
+    "types/helpers/*.d.ts",
+    "helpers/package.json",
+    "helpers/**/*.js",
+    "helpers/**/*.d.ts"
+  ],
   "devDependencies": {
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^13.3.0",
