@@ -2,7 +2,7 @@
   "name": "@nghiavuive/wheel.js",
   "homepage": "https://github.com/NghiaCaNgao/Wheel.js",
   "description": "Simple lucky wheel using the canvas element.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "author": "NCN",
   "main": "dist/wheel.js",
