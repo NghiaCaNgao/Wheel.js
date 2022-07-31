@@ -30,3 +30,6 @@ docs/api
 
 # Generated
 /types/tests/autogen*.ts
+
+# Test
+/example
