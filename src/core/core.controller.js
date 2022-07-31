@@ -11,14 +11,17 @@ function getChart(key) {
 
 /**
  * Get canvas object
- * @param {StringID} item the id of Canvas Element
- * @returns the CanvasObject
+ * @param {String} item the id of Canvas Element
+ * @returns {HTMLCanvasElement | undefined} the CanvasObject
  */
 function getCanvas(item) {
-    if (_isDomSupported() && typeof item === 'string') {
-        item = document.getElementById(item);
+    var el;
+    if (_isDomSupported()) {
+        var tmp = document.getElementById(item);
+        if (tmp && tmp.nodeName === "CANVAS") el = tmp;
     }
-    return item;
+    // @ts-ignore
+    return el;
 }
 
 class Chart {
